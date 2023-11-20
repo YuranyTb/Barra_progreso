@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(114, 6, 238);
+}
+
+.barra{
+    background-color: blueviolet;
+    height: 45px;
+    width: 50%;
+    margin: 130px auto;/*Margen de 130px, el resto de margen de manera automatica*/
+    box-shadow: inset 6px 6px 12px #8643bd,/*Efectos internos de degradado*/
+            inset -6px -6px 12px #8643bd;
+    overflow: hidden;/*Cualquier elemento que contenga lo esconda y no se desborde*/
+    border: none;
+    border-radius: 20rem;
+}
+
+.progreso{
+    height: 100%; /*Se ajuste al 100% del contenedor padre*/
+    width: 0;
+    background-color: mediumorchid;
+    box-shadow: 0 0 10px mediumorchid,/*Sombra y difumincación*/
+        0 0 20px mediumorchid;
+    display: block;/*Porque es Span*/
+    border-radius: 20rem;   
+}
+
+.porcentaje{
+    font-size: 2.5rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;/*Negrilla*/
+    text-align: center;
+    transform: translatey(100px);/*Transformación de 100px*/
+    color: mediumorchid;
+}
+
+body.celebracion{
+    background-image: url("../img/celebracion.gif");
+    background-size: cover;/*Cubre toda la clase*/
+    background-repeat: no-repeat;
+}
